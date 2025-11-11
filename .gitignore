@@ -1,0 +1,312 @@
+# ================================================================================
+# .gitignore - Bot Ferretería
+# ================================================================================
+
+# ================================================================================
+# VARIABLES DE ENTORNO Y CREDENCIALES
+# ================================================================================
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+.env.test
+
+# Archivos de configuración con credenciales
+config/credentials.json
+config/secrets.json
+*.pem
+*.key
+*.cert
+
+# ================================================================================
+# NODE.JS
+# ================================================================================
+
+# Dependencias
+node_modules/
+jspm_packages/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
+
+# Archivos de runtime
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Directorios de testing
+lib-cov/
+coverage/
+.nyc_output/
+.grunt/
+.lock-wscript
+
+# Directorios de build
+build/
+dist/
+out/
+
+# Cache
+.npm
+.eslintcache
+.node_repl_history
+.yarn-integrity
+
+# ================================================================================
+# MONGODB
+# ================================================================================
+*.mongodb
+mongodb-data/
+dump/
+backup/
+*.bson
+*.json.gz
+
+# ================================================================================
+# DOCKER
+# ================================================================================
+.dockerignore.backup
+docker-compose.override.yml
+
+# ================================================================================
+# GOOGLE CLOUD
+# ================================================================================
+.gcloud/
+.config/gcloud/
+gcloud-credentials.json
+service-account-key.json
+*.json.enc
+
+# ================================================================================
+# EDITORES E IDEs
+# ================================================================================
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains IDEs (WebStorm, IntelliJ, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.vim/
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ================================================================================
+# SISTEMAS OPERATIVOS
+# ================================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+.nfs*
+
+# ================================================================================
+# ARCHIVOS TEMPORALES Y DE BACKUP
+# ================================================================================
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*~
+.#*
+
+# ================================================================================
+# TESTING
+# ================================================================================
+.jest/
+jest-results/
+test-results/
+__tests__/coverage/
+*.test.js.snap
+
+# ================================================================================
+# TYPESCRIPT (si se usa en el futuro)
+# ================================================================================
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# ================================================================================
+# ARCHIVOS DE DATOS SENSIBLES
+# ================================================================================
+data/
+uploads/
+downloads/
+exports/
+imports/
+
+# Archivos CSV/Excel con datos reales
+*.csv
+*.xlsx
+*.xls
+
+# Archivos SQL con datos
+*.sql
+*.sqlite
+*.db
+
+# ================================================================================
+# SCRIPTS Y HERRAMIENTAS LOCALES
+# ================================================================================
+scripts/local/
+tools/local/
+*.local.js
+*.local.sh
+*.local.ps1
+
+# ================================================================================
+# DOCUMENTACIÓN GENERADA
+# ================================================================================
+docs/generated/
+api-docs/
+jsdoc/
+
+# ================================================================================
+# ARCHIVOS DE CONFIGURACIÓN LOCAL
+# ================================================================================
+.npmrc.local
+.yarnrc.local
+
+# ================================================================================
+# CERTIFICADOS SSL/TLS
+# ================================================================================
+*.crt
+*.csr
+*.der
+*.p12
+*.pfx
+
+# ================================================================================
+# ARCHIVOS DE SESIÓN Y CACHE
+# ================================================================================
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.vuepress/dist/
+
+# ================================================================================
+# ARCHIVOS DE ANÁLISIS Y PROFILING
+# ================================================================================
+*.cpuprofile
+*.heapprofile
+*.heapsnapshot
+
+# ================================================================================
+# ARCHIVOS ESPECÍFICOS DEL PROYECTO
+# ================================================================================
+
+# Datos de embeddings locales
+embeddings/
+vectors/
+
+# Archivos de prueba con datos reales
+test-data/
+sample-data/
+
+# Reportes y análisis
+reports/
+analytics/
+
+# Archivos de migración ejecutados
+migrations/executed/
+
+# ================================================================================
+# MANTENER ESTOS ARCHIVOS (NO IGNORAR)
+# ================================================================================
+# Usar ! para forzar inclusión de archivos importantes
+
+# Ejemplos y plantillas
+!.env.example
+!config.example.json
+!docker-compose.example.yml
+
+# Documentación
+!README.md
+!ARCHITECTURE.md
+!DEPLOYMENT.md
+!*.md
+
+# Configuración de proyecto
+!package.json
+!package-lock.json
+!Dockerfile
+!.dockerignore
+
+# Scripts de despliegue
+!deploy.ps1
+!deploy-secrets.ps1
+
+# ================================================================================
+# NOTAS
+# ================================================================================
+# Este .gitignore está diseñado para:
+# 1. Proteger credenciales y datos sensibles
+# 2. Evitar archivos generados y temporales
+# 3. Mantener el repositorio limpio
+# 4. Facilitar colaboración entre desarrolladores
+#
+# Revisar periódicamente y actualizar según necesidades del proyecto
+# ================================================================================
