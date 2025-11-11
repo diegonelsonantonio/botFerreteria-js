@@ -296,8 +296,8 @@ migrations/executed/
 !.dockerignore
 
 # Scripts de despliegue
-!deploy.ps1
-!deploy-secrets.ps1
+deploy.ps1
+deploy-secrets.ps1
 
 # ================================================================================
 # NOTAS
